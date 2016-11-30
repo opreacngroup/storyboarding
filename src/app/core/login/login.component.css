@@ -1,0 +1,30 @@
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 235px;
+  background-color: #ccc;
+}
+
+md-input
+{
+    width: 95%;
+}
+
+a
+{
+    padding-left: 2em;
+}
+
+md-card-actions div
+{    
+    padding-top: 1% ;
+    padding-bottom: 0%;
+    padding-left: 1%;
+    padding-right: 1%;    
+}

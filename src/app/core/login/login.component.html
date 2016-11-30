@@ -1,0 +1,24 @@
+
+<div class="center-div">
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <md-card>
+            <md-card-title>LOGIN</md-card-title>
+            <md-card-content>
+                <md-input placeholder="username" type="test" [(ngModel)]="user.name" name="user" required></md-input>
+                <br>
+                <md-input placeholder="password" type="password" [(ngModel)]="user.password" name="password" required></md-input>
+            </md-card-content>
+            <md-card-actions>
+                <button type="submit" [disabled]="!loginForm.form.valid" md-raised-button color="primary">LOGIN</button>
+                <!--
+                <nav>
+                    <a routerLink="/reset-password" routerLinkActive="active">Forgot password?</a>
+                    <a routerLink="/sign-up" routerLinkActive="active">Sign up?</a>
+                </nav>
+                -->
+                <a href="">Forgot password?</a>
+                <a href="">Sign up</a>
+            </md-card-actions>       
+        </md-card>
+    </form>
+</div>
